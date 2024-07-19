@@ -1,0 +1,51 @@
+body {
+  background-color: #4dc2d6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; 
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#gameArea {
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+#gameArea img {
+  display: block;
+  margin: 0 auto;
+}
+
+#animatedImage {
+  width: 100px;
+  height: 100px;
+  background-image: url('./animated-image.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  animation: moveImage 5s infinite;
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#adivinarBtn {
+  margin-top: 20px;
+}
